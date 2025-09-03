@@ -1,0 +1,139 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: #c2ffdb;  
+  color:#111827;
+}
+
+header{
+  background:#ff6600;  
+  color:white;
+  padding:14px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo img {
+  height: 40px; 
+}
+
+nav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 8px;
+  font-weight: 500;
+  opacity:.95;
+}
+
+.page{
+  max-width:1100px;
+  margin:48px auto;
+  padding:24px;
+}
+
+.card{
+  background:#ffffff;  
+  border-radius:8px;
+  padding:36px 32px 48px;
+  box-shadow:0 6px 18px rgba(16,24,40,.04);
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+.title h1{margin:0; font-weight:600; letter-spacing:0.2px}
+.title .subtitle{
+  color:#1e1e1e;
+  font-weight: 400;
+  margin-top: 2px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:28px 44px;
+  align-items:start;
+}
+
+.left{
+  display:flex;
+  justify-content:center;
+}
+form{
+  width:360px;
+}
+
+label{
+  display:block;
+  font-size:13px;
+  color:var(--muted);
+  margin:10px 0 6px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], select{
+  width:100%;
+  padding:10px 12px;
+  border-radius:4px;
+  border:1px solid var(--input-border);
+  background:transparent;
+  font-size:14px;
+  outline:none;
+}
+
+select{
+  appearance:none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(0,0,0,.6) 50%),
+    linear-gradient(135deg, #ff6600, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(1em + 2px),
+    calc(100% - 13px) calc(1em + 2px);
+  background-size:6px 6px,6px 6px;
+  background-repeat:no-repeat;
+}
+
+.checkbox-row{
+  display:flex; align-items:center; gap:8px;
+  margin-top:14px; color:var(--muted); font-size:14px;
+}
+
+.actions{margin-top:20px}
+button[type=submit]{
+  width:100%;
+  background:var(--blue);
+  color:#ff6600;
+  padding:12px 18px;
+  border-radius:8px;
+  border: none;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 6px 14px rgba(59,130,246,.18);
+}
+
+.right{
+  min-height:360px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--muted);
+  font-size:8px;
+}
+.right img {
+  max-width: 330px;  
+  height: auto;
+  border-radius: 8px; 
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+@media (max-width:880px){
+  .form-grid{grid-template-columns:1fr}
+  .right{display:none}
+  .page{margin:18px}
+}
+

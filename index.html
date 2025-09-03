@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logosenai.png" alt="Logo do SENAI">
+    </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Cursos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="title">
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg> CADASTRO de Aluno</h1>
+      <div class="subtitle">Preencha os dados abaixo para realizar sua matrícula:</div>
+    </div>
+    <div class="card">
+      <div class="form-grid">
+        <div class="left">
+          <form>
+            <label for="nome">Nome Completo</label>
+            <input id="nome" type="text" placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Digite seu e-mail">
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" placeholder="Digite seu telefone">
+
+            <label for="curso">Escolha o Curso</label>
+            <select id="curso">
+              <option>Selecione um curso</option>
+              <option>Técnico em Informática</option>
+              <option>Técnico em Automação</option>
+              <option>Administração</option>
+              <option>Empilhadeira</option>
+              <option>Eletrotécnica</option>
+            </select>
+            <label for="nasc">Data de Nascimento</label>
+            <input id="nasc" type="date" placeholder="dd/mm/aaaa">
+
+            <div class="checkbox-row">
+              <input id="terms" type="checkbox">
+              <label for="terms" style="margin:0">Eu concordo com os termos e condições</label>
+            </div>
+
+            <div class="actions">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="right">
+        <div><img src="PessoaSenai.webp" alt="Logo do SENAI"></div>
+       </div>
+       </div>
+       </div>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
